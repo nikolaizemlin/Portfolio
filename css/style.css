@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Eater|Nosifer|Rock+Salt|UnifrakturMaguntia');
 
 body, html {
-	font-family: 'Rock+Salt', cursive;
+	/* font-family: 'Rock+Salt', cursive; */
+	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #656c6d;
