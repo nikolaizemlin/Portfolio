@@ -1,10 +1,17 @@
+/* @import url('https://fonts.googleapis.com/css?family=Eater|Rock+Salt'); */
+/* @import url('https://fonts.googleapis.com/css?family=Eater|Rock+Salt|UnifrakturMaguntia'); */
+@import url('https://fonts.googleapis.com/css?family=Eater|Nosifer|Rock+Salt|UnifrakturMaguntia');
+
 body, html {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Rock+Salt', cursive;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #656c6d;
 	width: 100% !important;
 	height: 100% !important;
+}
+.intro-text {
+	font-family: 'Nosifer', cursive;
 }
 h1 {
 	font-weight: 700;
