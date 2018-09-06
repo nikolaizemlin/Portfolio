@@ -33,6 +33,38 @@
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Countdown for graduation -->
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("sep 24, 2018 15:37:25").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get todays date and time
+    var now = new Date().getTime();
+  
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+  
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+    // Display the result in the element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+  
+    // If the count down is finished, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
+<!-- Countdown for graduation -->
 
 <!-- Header -->
 <header id="header">
@@ -40,8 +72,8 @@
     <div class="container">
       <div class="row">
         <div class="intro-text">
-          <h1>Hello...My Name is <span class="name">Nick Hosley</span></h1>
-          <p>Front End & Back End Developer "In Progress but learning Fast...."</p>
+          <h1 style="color:red">Hello...My Name is <span class="name">Nick Hosley</span></h1>
+          <p>Front End and Back End Web Developer.</p>
           <!-- <a href="#about" class="boton">Learn More</a> </div> -->
           <a href="#about" class="btn btn-default btn-lg page-scroll">Learn More about me</a> </div>
       </div>
@@ -66,6 +98,8 @@
           <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
           <li> <a class="page-scroll" href="#resume">Resume</a> </li>
           <li> <a class="page-scroll" href="#contact">Contact</a> </li>
+          <li><a class="nav-link" style="color:red" href="https://images7.alphacoders.com/370/370767.jpg" id="demo"></a></li>
+          <li> <a class="page-scroll" style="color:red" href="#">Until Graduation</a> </li>
         </ul>
       </div>
     </div>
@@ -82,9 +116,10 @@
       <div class="col-md-12 text-center"><img src="img/about.jpg" class="img-responsive"></div>
       <div class="col-md-8 col-md-offset-2">
         <div class="about-text">
-          <p>I think outside the box. I do not see problems or an issues rather I see as a chance to excel. Nothing is impossible.</p>
-          <p>The most important thing in my life is my daughter I love spending time with her doing anything and everything.  I love to cook and bake in my spare time. I do play some video games to pass the time. I feel it is important to keep InTouch with nature and outdoor activities too. </p>
-          <p>I worked as a mechanic though high school and for a few years after I graduated. I helped my dad open his mechanic shop. I left and went into construction and worked on commercial building and residential projects for years. Then, took a month and helped build a log cabin in Utah. Got tired of working outside and went to school to get a degree and start my office work adventure.</p>
+          <p>I tend to think outside the box. I see solutions multiple different outcomes. Nothing is impossible.</p>
+          <p>The most important thing in my life is my daughter I love spending time with her doing anything and everything.  I love to code first and formost not sure how it took me this long in life to realize this.  I also like to cook and bake in my spare time. I play some a few different MMO's. I feel it is important to keep InTouch with nature and outdoor activities too. </p>
+          <p>I worked as a mechanic though high school and for a few years after I graduated. I went into construction and worked on commercial buildings and residential projects for years. Then, took a month and helped build a log 
+            cabin in Utah. Got tired of working outside and went to school to get a degree and start a new path with AutoCAD and led me to Titan Formwork where I have forged a career and moving on to software development within Titan.</p>
           <p class="text-center"><a class="btn btn-primary" href="nickresume.pdf" download="nickresume.pdf"><i class="fa fa-download"></i> Download Resume</a></p>
         </div>
       </div>
@@ -92,6 +127,7 @@
   </div>
 </div>
 <!-- Skills Section -->
+
 <div id="skills" class="text-center">
   <div class="container">
     <div class="section-title center">
@@ -99,45 +135,64 @@
       <hr>
     </div>
     <div class="row">
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
         <h4>HTML</h4>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
         <h4>CSS3</h4>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
         <h4>jQuery</h4>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="88"> <span class="percent">88</span> </span>
         <h4>JavaScript</h4>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
         <h4>Photoshop</h4>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
         <h4>AutoCAD</h4>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
         <h4>Solid Works</h4>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="55"> <span class="percent">55</span> </span>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
         <h4>Node.js</h4>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="44"> <span class="percent">44</span> </span>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="82"> <span class="percent">82</span> </span>
         <h4>SQL/MySQL</h4>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="23"> <span class="percent">23</span> </span>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="20"> <span class="percent">20</span> </span>
+        <h4>MongoDB</h4>
+      </div>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="40"> <span class="percent">40</span> </span>
         <h4>Express</h4>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="100"> <span class="percent">100</span> </span>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="100"> <span class="percent">100</span> </span>
         <h4>Problem Solving</h4>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="69"> <span class="percent">69</span> </span>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="72"> <span class="percent">72</span> </span>
         <h4>API's</h4>
+      </div>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="12"> <span class="percent">12</span> </span>
+        <h4>Angular.js</h4>
+      </div>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="64"> <span class="percent">64</span> </span>
+        <h4>HandelBars</h4>
+      </div>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="74"> <span class="percent">74</span> </span>
+        <h4>Semantic UI</h4>
+      </div>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="82"> <span class="percent">82</span> </span>
+        <h4>Materialize</h4>
+      </div>
+      <div class="col-md-2 col-sm-6 skill"> <span class="chart" data-percent="98"> <span class="percent">98</span> </span>
+        <h4>Cooking</h4>
       </div>
     </div>
   </div>
 </div>
+
 <!-- Portfolio Section -->
 <div id="portfolio">
   <div class="container">
@@ -279,34 +334,39 @@
       <hr>
     </div>
     <div class="row">
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="200ms">
-        <div class="achievement-box"> <span class="count">648</span>
+      <div class="col-md-2 col-sm-6 wow fadeInDown" data-wow-delay="200ms">
+        <div class="achievement-box"> <span class="count">988</span>
           <h4>Hours of Coding</h4>
         </div>
       </div>
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="400ms">
-        <div class="achievement-box"> <span class="count">51801</span>
+      <div class="col-md-2 col-sm-6 wow fadeInDown" data-wow-delay="400ms">
+        <div class="achievement-box"> <span class="count">52301</span>
           <h4>Hours of Work</h4>
         </div>
       </div>
-      <!-- <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="600ms">
+      <div class="col-md-2 col-sm-6 wow fadeInDown" data-wow-delay="600ms">
         <div class="achievement-box"> <span class="count">30</span>
           <h4>Awards Won</h4>
         </div>
-      </div> -->
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="800ms">
+      </div> 
+     <div class="col-md-2 col-sm-6 wow fadeInDown" data-wow-delay="800ms">
         <div class="achievement-box"> <span class="count">1</span>
           <h4>Years of Coding Experience</h4>
         </div>
       </div>
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="800ms">
-        <div class="achievement-box"> <span class="count">21</span>
+      <div class="col-md-2 col-sm-6 wow fadeInDown" data-wow-delay="800ms">
+        <div class="achievement-box"> <span class="count">22</span>
           <h4>Years of Buisness Experience</h4>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 wow fadeInDown" data-wow-delay="800ms">
+        <div class="achievement-box"> <span class="count">31</span>
+          <h4>Years of Gaming Experiance</h4>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div> 
 <!-- Resume Section -->
 <div id="resume" class="text-center">
   <div class="container">
