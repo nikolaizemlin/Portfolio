@@ -213,6 +213,7 @@ hr {
 #skills {
 	padding: 100px 0;
 	background: url(../img/intro-bg.jpg) no-repeat center top;
+	background-size: cover;
 }
 #skills h2 {
 	color: #fff;
@@ -391,6 +392,7 @@ ol.type li a:hover {
 #achievements {
 	padding: 100px 0;
 	background: url(../img/intro-bg.jpg) no-repeat center top;
+	background-size: cover;
 }
 #achievements h2 {
 	color: #fff;
@@ -521,6 +523,7 @@ ol.type li a:hover {
 	padding: 100px 0 40px 0;
 	color: #d60a0a;
 	background: url(../img/intro-bg.jpg) no-repeat center top;
+	background-size: cover;
 }
 #contact h2 {
 	color: #fff;
